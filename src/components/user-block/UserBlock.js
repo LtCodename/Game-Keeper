@@ -44,7 +44,8 @@ class UserBlock extends React.Component {
 
   render() {
     let className = 'gameBlock gameBlock_';
-    let color = this.props.color;
+    // let color = this.props.color;
+    let color = '';
 
     if (color) {
       className += color;
@@ -82,12 +83,8 @@ class UserBlock extends React.Component {
     return (
       <div className="cardWrapper">
         <button className={className} data-toggle="modal" onClick={this.openModalWindow}>
-          <div className="gameBlockContent">
+          <div className="game-block-content">
             <span className="gameName">{this.props.gameData.name}</span>
-            <div className="gameBlockFooter">
-              {dateToShow}
-              {platfotmsOnBlock}
-            </div>
           </div>
         </button>
         {this.state.showModalWindow ? modalWindow : ''}

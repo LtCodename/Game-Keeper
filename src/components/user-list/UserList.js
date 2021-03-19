@@ -5,7 +5,7 @@ import indexActions from '../../redux/reducers/selectedListIndexReducer';
 import { connect } from 'react-redux'
 import { ListOptionsButton } from "../../IconsLibrary";
 import Nav from "../nav/Nav";
-import {Redirect, withRouter} from "react-router-dom";
+import { Redirect, withRouter } from "react-router-dom";
 import AddSectionTool from "../add-section-tool/AddSectionTool";
 import ListSettingsMenu from "../list-settings-menu/ListSettingsMenu";
 import { DemoUser } from "../../App";
@@ -93,8 +93,10 @@ class UserList extends React.Component {
         <Nav/>
         <div className="allContent">
           {nameAndButtonsBlock}
-          {hiddenSection}
-          {sectionsToRender}
+          <div className="sections-row">
+            {hiddenSection}
+            {sectionsToRender}
+          </div>
           {this.props.userData.email === DemoUser ? '' : <AddSectionTool
               listId={this.props.listRealId}
               sections={this.props.userSections}

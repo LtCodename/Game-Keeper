@@ -1,13 +1,18 @@
+.game-block-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .gameBlock {
-  --footer-content-height: 20px;
   border: none;
-  text-align: center;
-  margin: 0 5px 5px 0;
-  min-width: 150px;
-  max-width: 250px;
+  margin: 0 10px 10px 0;
   outline: none;
+  border-radius: 20px;
+  background: #dbd2d2;
   padding: 5px 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -18,6 +23,7 @@
   padding: 5px 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: #131d11;
 }
 
 .game-block:not(:last-child) {
@@ -49,11 +55,9 @@
 }
 
 .gameName {
-  min-height: 48px;
-  display: block;
   font-size: 17px;
-  font-weight: 700;
-  color: var(--first-color);
+  font-weight: 500;
+  color: var(--rework-color-brown);
 }
 
 .game-name {
@@ -69,12 +73,7 @@
   margin-right: 5px;
   font-size: 17px;
   font-weight: 500;
-  color: var(--first-color);
-}
-
-.gameBlockContent {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
+  color: var(--rework-color-brown);
 }
 
 .game-block-mini {

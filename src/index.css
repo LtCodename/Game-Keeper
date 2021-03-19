@@ -18,6 +18,11 @@
     --first-color: rgba(0, 121, 197, 1);
     --second-color: rgba(255, 246, 143, 1);
     --third-color: rgba(255, 249, 222, 1);
+
+    --rework-color-dark: #424c5c;
+    --rework-color-brown: #1f2328;
+    --rework-color-block: #dbd2d2;
+
     --content-gap: 55px;
 }
 
@@ -67,7 +72,7 @@ input {
 .allContent {
   padding: 10px;
   flex: 1;
-  background-color: #1b2838;
+  background-color: var(--rework-color-dark);
 }
 
 ul {

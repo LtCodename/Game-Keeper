@@ -32,8 +32,8 @@ class UserSection extends React.Component {
         gameData={elem}
         sectionId={this.props.id}/>;
     }).sort((a, b) => {
-      const releaseDateA = a.props.gameData.releaseDate || "";
-      const releaseDateB = b.props.gameData.releaseDate || "";
+      const releaseDateA = a.props.gameData.name || "";
+      const releaseDateB = b.props.gameData.name || "";
 
       if (releaseDateA < releaseDateB) {
         return -1;
@@ -44,21 +44,21 @@ class UserSection extends React.Component {
       return 0;
     });
 
-    const colorButton = (
-        <button className="section-color-button shake-little" onClick={this.showSectionSettingsMenu} >
-          {SectionColorButton}
-        </button>
-    )
+    // const colorButton = (
+    //   <button className="section-color-button shake-little" onClick={this.showSectionSettingsMenu} >
+    //     {SectionColorButton}
+    //   </button>
+    // )
 
     const optionsButton = (
-        <button className="section-options-button" onClick={this.showSectionSettingsMenu} >
-          {SectionOptionsButton}
-        </button>
+      <button className="section-options-button" onClick={this.showSectionSettingsMenu} >
+        {SectionOptionsButton}
+      </button>
     )
 
     const editSectionButton = (
         <div className="section-options-holder">
-          {this.props.type === 'hidden' ? colorButton : optionsButton}
+          {this.props.type === 'hidden' ? '' : optionsButton}
           {this.state.showSectionSettingsMenu ?
               <SectionSettingsMenu
                   sectionName={this.props.name}
@@ -86,25 +86,25 @@ class UserSection extends React.Component {
     );
 
     const haveGamesNode = (
-        <>
-          {nameAndButtonsBlock}
-          <div className="inner-section">
-            {gamesToRender}
-            {this.props.userData.email === DemoUser ? '' : <AddGameTool sectionId={this.props.id}/>}
-          </div>
-        </>
+      <>
+        {nameAndButtonsBlock}
+        <div className="inner-section">
+          {gamesToRender}
+          {this.props.userData.email === DemoUser ? '' : <AddGameTool sectionId={this.props.id}/>}
+        </div>
+      </>
     )
 
     const noGamesNode = (
-        <div className="no-games-node lt-row">
-          <AddGameTool sectionId={this.props.id} hiddenSection={true}/>
-        </div>
+      <div className="no-games-node lt-row">
+        <AddGameTool sectionId={this.props.id} hiddenSection={true}/>
+      </div>
     )
 
     return (
-        <div className="section">
-          {(!gamesInThisSection.length && this.props.type === 'hidden') ? noGamesNode : haveGamesNode}
-        </div>
+      <div className="section">
+        {(!gamesInThisSection.length && this.props.type === 'hidden') ? noGamesNode : haveGamesNode}
+      </div>
     );
   }
 }

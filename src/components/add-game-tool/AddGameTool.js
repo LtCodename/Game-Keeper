@@ -27,7 +27,7 @@ const AddGameTool = ({ sectionId, hiddenSection }) => {
         <>
             <AddButton
                 onClick={showGameBlockWindow}
-                text={hiddenSection ? "Add Game" : "Add Game"}
+                text={"+"}
                 additionalClass={addButtonClass}
             />
             {showAddWindow ? addGameWindow : ''}

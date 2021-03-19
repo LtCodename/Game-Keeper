@@ -6,6 +6,12 @@
   top: 0;
 }
 
+.sections-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .list-options-holder {
   position: relative;
 }
@@ -31,23 +37,16 @@
 }
 
 .listName {
-  /*text-overflow: ellipsis;
   font-weight: 800;
-  font-size: 30px;
-  color: var(--second-color);
-  margin-right: 5px;*/
-  text-overflow: ellipsis;
-  font-weight: 800;
-  font-size: 19px;
-  color: rgb(1, 120, 197);
+  font-size: 45px;
+  color: #FFFFFF;
   margin-right: 5px;
-  background-color: #fff68f;
-  padding: 4px 10px;
-  text-transform: uppercase;
+  line-height: 45px;
 }
 
 .listWrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
