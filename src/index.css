@@ -67,7 +67,7 @@ input {
 .allContent {
   padding: 10px;
   flex: 1;
-  background-color: var(--first-color);
+  background-color: #1b2838;
 }
 
 ul {

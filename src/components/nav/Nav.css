@@ -1,20 +1,20 @@
 .navbarWrapper {
   width: 220px;
   padding: 10px 0 0 10px;
-  background-color: var(--first-color);
+  background-color: #1b2838;
 }
 
 .navButton {
   text-align: center;
   font-family: var(--main-font);
-  color: var(--first-color);
+  color: #FFFFFF;
   display: block;
   width: 100%;
   border: none;
   outline: none !important;
   cursor: pointer;
   border-radius: 0;
-  background-color: var(--second-color);
+  background-color: #573b0e;
   font-size: 19px;
   white-space: inherit;
   font-weight: 700;
