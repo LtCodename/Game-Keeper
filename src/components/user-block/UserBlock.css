@@ -31,7 +31,7 @@
 }
 
 .gameBlock:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translate(5px);
 }
 
 .gameBlock:active {
@@ -58,6 +58,7 @@
   font-size: 17px;
   font-weight: 500;
   color: var(--rework-color-brown);
+  text-align: left;
 }
 
 .game-name {

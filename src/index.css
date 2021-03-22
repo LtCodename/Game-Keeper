@@ -23,7 +23,7 @@
     --rework-color-brown: #1f2328;
     --rework-color-block: #dbd2d2;
 
-    --content-gap: 55px;
+    --content-gap: 60px;
 }
 
 body {
@@ -64,7 +64,7 @@ input {
 .contentWrapper {
     display: flex;
     position: relative;
-    background-color: var(--first-color);
+    background-color: var(--rework-color-dark);
     min-height: calc(100vh - var(--content-gap));
     justify-content: center;
 }

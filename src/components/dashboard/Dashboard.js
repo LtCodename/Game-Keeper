@@ -37,7 +37,7 @@ class Dashboard extends React.Component {
         });
 
         const addListButton = (
-            <AddButton text={'Add Collection'} onClick={this.showAddListTool} additionalClass={'gk-add-button-dashboard'}/>
+            <AddButton text={'+'} onClick={this.showAddListTool} additionalClass={'gk-add-button-dashboard'}/>
         );
 
         const addListNode = this.state.showAddListTool ? <AddListTool

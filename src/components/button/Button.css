@@ -98,6 +98,5 @@
 /*Additional Rules*/
 
 .auth-header-button {
-    padding: 4px;
-    background: #fff68f;
+    padding: 0 5px;
 }

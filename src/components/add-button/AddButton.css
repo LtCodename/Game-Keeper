@@ -1,12 +1,16 @@
 .gk-add-button {
     border: none;
     width: fit-content;
-    background: var(--rework-color-brown);
-    padding: 10px;
-    color: #FFFFFF;
     font-weight: 700;
     cursor: pointer;
     transition: .3s all;
+
+    color: #000000;
+    border-radius: 20px;
+    background: #dbd2d2;
+    padding: 5px 8px;
+    font-weight: 400;
+    padding: 5px 13px;
 }
 
 .gk-add-button:hover {
@@ -35,15 +39,17 @@
 }
 
 .gk-add-button-list {
-    width: 100%;
-    padding: 5px 10px;
-    font-size: 19px;
+    width: fit-content;
+    color: #000000;
     border-radius: 20px;
+    padding: 5px 8px;
+    font-weight: 400;
+    padding: 5px 13px;
 }
 
 .gk-add-button-dashboard {
-    font-size: 19px;
-    max-height: 48px;
+    height: fit-content;
+    padding: 8px 15px;
 }
 
 @media (max-width: 450px) {
