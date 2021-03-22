@@ -1,5 +1,5 @@
 .profile-general-wrapper {
-  background-color: var(--first-color);
+  background-color: var(--rework-color-dark);
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -7,8 +7,7 @@
 }
 
 .property-value {
-  color: #0178c5;
-  font-weight: 300;
+  color: #FFFFFF;
 }
 
 .verification-message {
@@ -30,9 +29,10 @@
 }
 
 .profile-wrapper {
-  background: #fef9de;
+  background: #1f2328;
   align-items: center;
   padding: 20px;
+  border-radius: 15px;
   width: fit-content;
   height: fit-content;
 }
@@ -50,8 +50,7 @@
 
 .property-name {
   margin-right: 10px;
-  color: #0178c5;
-  font-weight: 800;
+  color: #FFFFFF;
 }
 
 @media (max-width: 510px) {

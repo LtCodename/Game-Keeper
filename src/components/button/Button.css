@@ -1,24 +1,21 @@
 /*Regular Button Styles*/
 .gk-button {
-    border-radius: 0;
-    background: #0079c5;
-    color: var(--third-color);
-    outline: none;
+    color: #000000;
     cursor: pointer;
     min-width: 85px;
     width: fit-content;
-    max-height: 35px;
-    font-weight: 600;
-    border: 2px solid transparent;
     transition: all .3s;
     text-align: center;
+
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #dbd2d2;
+    padding: 5px 8px;
 }
 
 .gk-button:hover {
-    outline: none;
-    background: #fef9de;
-    border: 2px solid #0079c5;
-    color: #0079c5;
+    transform: translate(5px);
 }
 
 .gk-button:focus {
